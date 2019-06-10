@@ -96,5 +96,4 @@ RSpec.configure do |config|
   end
 
   config.include RequestSpecHelper
-
 end
