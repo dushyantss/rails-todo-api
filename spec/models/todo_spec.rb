@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # spec/models/todo_spec.rb
-require 'rails_helper'
+require "rails_helper"
 
 # Test suite for the Todo model
 RSpec.describe Todo, type: :model do
