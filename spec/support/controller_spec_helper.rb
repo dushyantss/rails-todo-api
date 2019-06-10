@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/support/controller_spec_helper.rb
 module ControllerSpecHelper
   # generate tokens from user id
@@ -7,7 +9,7 @@ module ControllerSpecHelper
 
   # generate expired tokens from user id
   def expired_token_generator(user_id)
-    JsonWebToken.encode({user_id: user_id}, (Time.now.to_i - 10))
+    JsonWebToken.encode({ user_id: user_id }, (Time.now.to_i - 10))
   end
 
   # return valid headers
